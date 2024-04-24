@@ -6,6 +6,7 @@ import {
   ImageFilters,
   Watermark,
   Resize,
+  Shape,
 } from '@scaleflex/icons';
 
 /** Internal Dependencies */
@@ -43,5 +44,10 @@ export const AVAILABLE_TABS = [
     id: TABS_IDS.RESIZE,
     labelKey: 'resizeTab',
     icon: Resize,
+  },
+  {
+    id: TABS_IDS.ICONS,
+    labelKey: 'iconsTab',
+    icon: Shape,
   },
 ];

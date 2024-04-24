@@ -17,6 +17,7 @@ export const TABS_IDS = {
   WATERMARK: 'Watermark',
   ANNOTATE: 'Annotate',
   RESIZE: 'Resize',
+  ICONS: 'Icons',
 };
 
 export const TOOLS_IDS = {
@@ -44,6 +45,8 @@ export const TOOLS_IDS = {
   WATERMARK: 'Watermark',
   PEN: 'Pen',
   RESIZE: 'Resize',
+  CAN: 'Can',
+  LIGHTING_FIXTURE: 'Lighting_Fixture',
 };
 
 export const FLIP_DIRECTIONS = {

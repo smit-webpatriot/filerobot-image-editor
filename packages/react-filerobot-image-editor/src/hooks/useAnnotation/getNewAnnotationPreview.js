@@ -10,6 +10,7 @@ const annotationsNamesToKonvaClasses = {
   [TOOLS_IDS.POLYGON]: Konva.RegularPolygon,
   [TOOLS_IDS.LINE]: Konva.Line,
   [TOOLS_IDS.IMAGE]: Konva.Image,
+  [TOOLS_IDS.LIGHTING_FIXTURE]: Konva.Image,
   [TOOLS_IDS.TEXT]: Konva.Text,
   [TOOLS_IDS.ARROW]: Konva.Arrow,
 };

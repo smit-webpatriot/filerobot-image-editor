@@ -14,6 +14,7 @@ export const ANNOTATION_NAMES_TO_COMPONENT = {
   [TOOLS_IDS.POLYGON]: PolygonNode,
   [TOOLS_IDS.TEXT]: TextNode,
   [TOOLS_IDS.IMAGE]: ImageNode,
+  [TOOLS_IDS.LIGHTING_FIXTURE]: ImageNode,
   [TOOLS_IDS.LINE]: LineNode,
   [TOOLS_IDS.ARROW]: ArrowNode,
   [TOOLS_IDS.PEN]: LineNode,

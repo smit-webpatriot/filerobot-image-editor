@@ -4,6 +4,8 @@ export { default as useFilter } from './useFilter';
 
 export { default as useAnnotation } from './useAnnotation';
 
+export { default as useIcons } from './useIcons';
+
 export { default as useAppReducer } from './useAppReducer';
 
 export { default as useAnnotationEvents } from './useAnnotationEvents';

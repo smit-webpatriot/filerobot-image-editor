@@ -27,6 +27,7 @@ export default {
   annotateTabLabel: 'Annotate',
   resize: 'Resize',
   resizeTab: 'Resize',
+  iconsTab: 'Icons',
   imageName: 'Image name',
   invalidImageError: 'Invalid image provided.',
   uploadImageError: 'Error while uploading the image.',

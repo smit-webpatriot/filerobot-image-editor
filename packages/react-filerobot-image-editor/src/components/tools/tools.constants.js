@@ -18,7 +18,12 @@ import { LineButton, LineOptions } from './Line';
 import { ArrowButton, ArrowOptions } from './Arrow';
 import { PolygonButton, PolygonOptions } from './Polygon';
 import { Resize } from './Resize';
+import { CanButton, CanOptions } from './Icons/Can';
 import { Watermark } from './Watermark';
+import {
+  LightingFixtureButton,
+  LightingFixtureOptions,
+} from './Icons/LightingFixture';
 
 export const TOOLS_ITEMS = {
   [TOOLS_IDS.CROP]: {
@@ -30,6 +35,7 @@ export const TOOLS_ITEMS = {
     Item: RotateButton,
     ItemOptions: RotateOptions,
   },
+  /*
   [TOOLS_IDS.FLIP_X]: {
     id: TOOLS_IDS.FLIP_X,
     Item: FlipX,
@@ -38,6 +44,7 @@ export const TOOLS_ITEMS = {
     id: TOOLS_IDS.FLIP_Y,
     Item: FlipY,
   },
+  */
   [TOOLS_IDS.BRIGHTNESS]: {
     id: TOOLS_IDS.BRIGHTNESS,
     Item: Brightness,
@@ -117,14 +124,26 @@ export const TOOLS_ITEMS = {
     id: TOOLS_IDS.RESIZE,
     Item: Resize,
   },
+  [TOOLS_IDS.CAN]: {
+    id: TOOLS_IDS.CAN,
+    Item: CanButton,
+    ItemOptions: CanOptions,
+  },
+  [TOOLS_IDS.LIGHTING_FIXTURE]: {
+    id: TOOLS_IDS.LIGHTING_FIXTURE,
+    Item: LightingFixtureButton,
+    ItemOptions: LightingFixtureOptions,
+  },
 };
 
 export const TABS_TOOLS = {
   [TABS_IDS.ADJUST]: [
     TOOLS_IDS.CROP,
     TOOLS_IDS.ROTATE,
+    /*
     TOOLS_IDS.FLIP_X,
     TOOLS_IDS.FLIP_Y,
+    */
   ],
   [TABS_IDS.FINETUNE]: [
     TOOLS_IDS.BRIGHTNESS,
@@ -146,4 +165,10 @@ export const TABS_TOOLS = {
     TOOLS_IDS.ARROW,
   ],
   [TABS_IDS.RESIZE]: [TOOLS_IDS.RESIZE],
+  [TABS_IDS.ICONS]: [
+    TOOLS_IDS.CAN,
+    TOOLS_IDS.LINE,
+    TOOLS_IDS.ARROW,
+    TOOLS_IDS.LIGHTING_FIXTURE,
+  ],
 };
