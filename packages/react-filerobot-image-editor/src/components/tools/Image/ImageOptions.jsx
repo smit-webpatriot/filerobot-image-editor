@@ -16,6 +16,7 @@ const ADDED_IMG_SPACING_PERCENT = 0.15;
 const ImageOptions = () => {
   const [isLoading, setIsLoading] = useState();
   const [galleryAnchorEl, setGalleryAnchorEl] = useState(null);
+  const [electricalCatAnchorEl, setElectricalAnchorEl] = useState(null);
   const uploadImgsInput = useRef();
   const menuItemsBtnRef = useRef();
   const {
@@ -29,6 +30,9 @@ const ImageOptions = () => {
   const isUploadEnabled = !imageConfig.disableUpload;
   const isGalleryEnabled =
     Array.isArray(imageConfig.gallery) && imageConfig.gallery.length > 0;
+  const isElectricalGalleryEnabled =
+    Array.isArray(imageConfig?.electricalGallary) &&
+    imageConfig?.electricalGallary?.length > 0;
   const [image, saveImage, addNewImage] = useAnnotation(
     {
       name: TOOLS_IDS.IMAGE,
@@ -145,9 +149,13 @@ const ImageOptions = () => {
   const openGalleryPanel = () => {
     setGalleryAnchorEl(menuItemsBtnRef.current);
   };
+  const openElectricalPanel = () => {
+    setElectricalAnchorEl(menuItemsBtnRef.current);
+  };
 
   const closeGalleryPanel = () => {
     setGalleryAnchorEl(null);
+    setElectricalAnchorEl(null);
   };
 
   const menuItems = useMemo(
@@ -163,6 +171,12 @@ const ImageOptions = () => {
         label: t('fromGallery'),
         icon: Images,
         onClick: openGalleryPanel,
+      },
+      isElectricalGalleryEnabled && {
+        key: 'add-from-electrical',
+        label: t('fromElectrical'),
+        icon: Images,
+        onClick: openElectricalPanel,
       },
     ],
     [imageConfig, isLoading, t],
@@ -196,6 +210,14 @@ const ImageOptions = () => {
           onSelect={importImgFromGallery}
           onClose={closeGalleryPanel}
           anchorEl={galleryAnchorEl}
+        />
+      )}
+      {electricalCatAnchorEl && (
+        <ImagesGallery
+          gallery={imageConfig?.electricalGallary}
+          onSelect={importImgFromGallery}
+          onClose={closeGalleryPanel}
+          anchorEl={electricalCatAnchorEl}
         />
       )}
     </ImageControls>

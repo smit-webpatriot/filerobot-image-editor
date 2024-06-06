@@ -61,6 +61,8 @@ export default {
   addImage: '+ Add image',
   uploadImage: 'Upload image',
   fromGallery: 'From gallery',
+  fromElectrical:'From Electrical',
+  fromSwitches:'From Switches',
   lineTool: 'Line',
   penTool: 'Pen',
   polygonTool: 'Polygon',
