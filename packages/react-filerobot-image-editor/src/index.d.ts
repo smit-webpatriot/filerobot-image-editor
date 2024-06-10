@@ -93,6 +93,12 @@ type imageAnnotation = annotationsCommon & {
     originalUrl: string;
     previewUrl: string;
   }[];
+  imageCategory?:{
+    [category:string]:{
+      originalUrl: string;
+      previewUrl: string;
+    }[]
+  }
 };
 
 type rectAnnotation = annotationsCommon & {
