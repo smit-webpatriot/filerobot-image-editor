@@ -16,7 +16,7 @@ const ADDED_IMG_SPACING_PERCENT = 0.15;
 const ImageOptions = () => {
   const [isLoading, setIsLoading] = useState();
   const [galleryAnchorEl, setGalleryAnchorEl] = useState(null);
-  const [electricalCatAnchorEl, setElectricalAnchorEl] = useState(null);
+  const [openedImageCategory, setOpenedImageCategory] = useState(null);
   const uploadImgsInput = useRef();
   const menuItemsBtnRef = useRef();
   const {
@@ -30,9 +30,6 @@ const ImageOptions = () => {
   const isUploadEnabled = !imageConfig.disableUpload;
   const isGalleryEnabled =
     Array.isArray(imageConfig.gallery) && imageConfig.gallery.length > 0;
-  const isElectricalGalleryEnabled =
-    Array.isArray(imageConfig?.electricalGallary) &&
-    imageConfig?.electricalGallary?.length > 0;
   const [image, saveImage, addNewImage] = useAnnotation(
     {
       name: TOOLS_IDS.IMAGE,
@@ -149,38 +146,34 @@ const ImageOptions = () => {
   const openGalleryPanel = () => {
     setGalleryAnchorEl(menuItemsBtnRef.current);
   };
-  const openElectricalPanel = () => {
-    setElectricalAnchorEl(menuItemsBtnRef.current);
-  };
-
   const closeGalleryPanel = () => {
     setGalleryAnchorEl(null);
-    setElectricalAnchorEl(null);
+    setOpenedImageCategory(null);
   };
 
-  const menuItems = useMemo(
-    () => [
+  const menuItems = useMemo(() => {
+    const newImageCategories = Object.keys(
+      imageConfig?.imageCategory || {},
+    ).map((category) => ({
+      key: `add-from-${category}`,
+      label: t(category),
+      icon: Images,
+      onClick: () => {
+        setOpenedImageCategory(category);
+        openGalleryPanel();
+      },
+    }));
+
+    return [
       isUploadEnabled && {
         key: 'add-by-upload-image',
         label: isLoading ? t('importing') : t('uploadImage'),
         icon: UploadOutline,
         onClick: isLoading ? undefined : triggerUploadInput,
       },
-      isGalleryEnabled && {
-        key: 'add-from-gallery',
-        label: t('fromGallery'),
-        icon: Images,
-        onClick: openGalleryPanel,
-      },
-      isElectricalGalleryEnabled && {
-        key: 'add-from-electrical',
-        label: t('fromElectrical'),
-        icon: Images,
-        onClick: openElectricalPanel,
-      },
-    ],
-    [imageConfig, isLoading, t],
-  );
+      ...newImageCategories,
+    ];
+  }, [imageConfig, isLoading, t]);
 
   return (
     <ImageControls image={image} saveImage={saveImage} t={t}>
@@ -204,22 +197,23 @@ const ImageOptions = () => {
           multiple
         />
       )}
-      {isGalleryEnabled && (
+
+      {openedImageCategory && (
         <ImagesGallery
-          gallery={imageConfig.gallery}
+          gallery={imageConfig.imageCategory[openedImageCategory]}
           onSelect={importImgFromGallery}
           onClose={closeGalleryPanel}
           anchorEl={galleryAnchorEl}
         />
       )}
-      {electricalCatAnchorEl && (
+      {/* {isElectricalGalleryEnabled && (
         <ImagesGallery
-          gallery={imageConfig?.electricalGallary}
+          gallery={imageConfig?.electricalGallery}
           onSelect={importImgFromGallery}
           onClose={closeGalleryPanel}
           anchorEl={electricalCatAnchorEl}
         />
-      )}
+      )} */}
     </ImageControls>
   );
 };

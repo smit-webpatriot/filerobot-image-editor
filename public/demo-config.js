@@ -265,7 +265,7 @@ const config = {
           'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/Logo+Vertical/SCALEFLEX+LOGO+VERTICAL.PNG?vh=9a6fa1',
       },
     ],
-    electricalGallary:[
+    electricalGallery:[
       {
         originalUrl:
           'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/PNG/SCALEFLEX+LOGO+-+Color+Dark+text.png?vh=45cac1',
@@ -284,16 +284,103 @@ const config = {
         previewUrl:
           'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGO+WITH+SCALEFLEX-01.png?vh=467711',
       },
-    ]
+    ],
+     imageCategory:{
+      gallery: [
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/PNG/SCALEFLEX+LOGO+-+Color+Dark+text.png?vh=45cac1',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/PNG/SCALEFLEX+LOGO+-+Color+Dark+text.png?vh=45cac1',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGOTYPE+WITH+SCALEFLEX-01-01.png?vh=76c5a7',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGOTYPE+WITH+SCALEFLEX-01-01.png?vh=76c5a7',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGO+WITH+SCALEFLEX-01.png?vh=467711',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGO+WITH+SCALEFLEX-01.png?vh=467711',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGO+WITH+SCALEFLEX+ON+WHITE+BG.png?vh=7ae33c',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGO+WITH+SCALEFLEX+ON+WHITE+BG.png?vh=7ae33c',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGO+WITH+SCALEFLEX+ON+BLACK+BG.png?vh=619469',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGO+WITH+SCALEFLEX+ON+BLACK+BG.png?vh=619469',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+Icon/FILEROBOT+ICON.png?vh=a4578e',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+Icon/FILEROBOT+ICON.png?vh=a4578e',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+Icon/FILEROBOT+ICON+ON+WHITE+BG.png?vh=fa44f7',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+Icon/FILEROBOT+ICON+ON+WHITE+BG.png?vh=fa44f7',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+Vertical/FILEROBOT+LOGO+VERTICAL.png?vh=05c4c3',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+Vertical/FILEROBOT+LOGO+VERTICAL.png?vh=05c4c3',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/PNG/SCALEFLEX+LOGO+-+Grayscale+Dark+text.png?vh=313898',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/PNG/SCALEFLEX+LOGO+-+Grayscale+Dark+text.png?vh=313898',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/Logo+Vertical/SCALEFLEX+LOGO+VERTICAL+WHITE+TEXT.png?vh=fca07b',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/Logo+Vertical/SCALEFLEX+LOGO+VERTICAL+WHITE+TEXT.png?vh=fca07b',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/Logo+Vertical/SCALEFLEX+LOGO+VERTICAL.PNG?vh=9a6fa1',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/Logo+Vertical/SCALEFLEX+LOGO+VERTICAL.PNG?vh=9a6fa1',
+      },
+    ],
+    electricalGallery:[
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/PNG/SCALEFLEX+LOGO+-+Color+Dark+text.png?vh=45cac1',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Scaleflex+Logos/PNG/SCALEFLEX+LOGO+-+Color+Dark+text.png?vh=45cac1',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGOTYPE+WITH+SCALEFLEX-01-01.png?vh=76c5a7',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGOTYPE+WITH+SCALEFLEX-01-01.png?vh=76c5a7',
+      },
+      {
+        originalUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGO+WITH+SCALEFLEX-01.png?vh=467711',
+        previewUrl:
+          'https://assets.scaleflex.com/Marketing/Logos/Filerobot+Logos/Logo+with+Scaleflex/LOGO+WITH+SCALEFLEX-01.png?vh=467711',
+      },
+    ],
+     }
   },
   [TOOLS.WATERMARK]: {
     // onUploadWatermarkImgClick: (loadAndSetWatermarkImg) => {
-    //   console.log(
-    //     'u could use the following function,',
-    //     loadAndSetWatermarkImg,
-    //   );
+    //   
     //   return new Promise((resolve, reject) => {
-    //     console.log('Simulating image upload for 2 seconds...');
+    //     
 
     //     setTimeout(() => {
     //       resolve({
@@ -332,18 +419,16 @@ const config = {
     // },
   },
   // onBeforeSave: (imageFileInfo) => {
-  //   console.log('info', imageFileInfo);
+  //   
   //   return false;
   // }, //  if function returned `false` then the default behavior (opening modal) won't be called,
   // onSave: (savedImageData, imageDesignState) => {
-  //   console.log('🕺🏼 Well, my onSave handler function is fired.');
-  //   console.log('🎇Image file is downloading.....');
-  //   console.log(
-  //     '🔔 Also for you to know, we have the following params passed in the onSave handler:',
-  //   );
-  //   console.log('▶️Image object: ', savedImageData);
-  //   console.log('▶️ Image design state:', imageDesignState);
-  //   console.log('CYA👋🏼👋🏼👋🏼');
+  //   
+  //   
+  //   
+  //   
+  //   
+  //   
   //   uriDownload(savedImageData.imageBase64, savedImageData.fullName);
   // },
   moreSaveOptions: [
@@ -369,7 +454,7 @@ const config = {
   // defaultSavedImageQuality: 0.92, // Min: 0.1, Max: 1, (1% - 100%) applied for 'jpg', 'jpeg' & 'webp' only
   // defaultSavedImageName: '',
   // forceToPngInEllipticalCrop: false, // in case the develop wants to force the saved image to be PNG if there is elliptical crop is done otherwise the provided savedImageType would be used.
-  // onClose: () => console.log('Act closing 👅'), // if we have value then close button will be shown unless showBackButton is true then if onClose has value the back button will be shown otherwise nothing will be shown.
+  // onClose: () => , // if we have value then close button will be shown unless showBackButton is true then if onClose has value the back button will be shown otherwise nothing will be shown.
   // tabsIds: [TABS.ADJUST, TABS.WATERMARK],
   // savingPixelRatio: 4,
   // previewPixelRatio: window.devicePixelRatio,
@@ -392,10 +477,10 @@ const config = {
   // showCanvasOnly: true,
   // getCurrentImgDataFnRef: saveFnRef,
   // onModify: (currentDesignState) => {
-  //   console.log('current design state', currentDesignState);
+  //   
   //   const savedImgData = saveFnRef.current({ name: 'Custom name ' });
   //   uriDownload(savedImgData.imageData.imageBase64);
-  //   console.log('image after saving', savedImgData);
+  //   
   // },
   // useZoomPresetsMenu: true,
   // disableZooming: true,
