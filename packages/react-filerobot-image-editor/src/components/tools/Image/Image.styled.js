@@ -8,7 +8,10 @@ const StyledImagesGallery = styled.div`
   padding: 8px;
   overflow-y: auto;
   max-height: 350px;
-  max-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 1px;
+  max-width: 300px; /* Max width when 4 or more images */
 `;
 
 const StyledImageWrapper = styled.div`
