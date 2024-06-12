@@ -6,6 +6,7 @@ const StyledImagesGallery = styled.div`
   box-shadow: 0px 1px 2px ${({ theme }) => theme.palette['light-shadow']};
   border-radius: 4px;
   padding: 8px;
+  margin-bottom: 5px;
   overflow-y: auto;
   max-height: 350px;
   display: grid;
